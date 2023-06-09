@@ -1,9 +1,10 @@
-import com.engeto.ListOfPlants;
-import com.engeto.Plant;
-import com.engeto.PlantException;
-import com.engeto.Settings;
+import com.engeto.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -65,13 +66,13 @@ public class Main {
 
         //adding plantI to the listOfPlants
         listOfPlants.addNewPlant(plantI);
-        System.out.println(listOfPlants.toString());
+        System.out.println(listOfPlants);
         //adding plantII to the listOfPlants
         listOfPlants.addNewPlant(plantII);
-        System.out.println(listOfPlants.toString());
+        System.out.println(listOfPlants);
         //adding plantIII to the listOfPlants
         listOfPlants.addNewPlant(plantIII);
-        System.out.println(listOfPlants.toString());
+        System.out.println(listOfPlants);
 
         //getting plant on index 1; for index 3 and greater an error is thrown
         System.out.print("====Getting plant on index 1====");
@@ -84,7 +85,7 @@ public class Main {
         //removing plantII from the listOfPlants
         System.out.print("====Removing plantII from the listOfPlants====");
         listOfPlants.removePlant(plantII);
-        System.out.println(listOfPlants.toString());
+        System.out.println(listOfPlants);
 
         //endregion
 
@@ -98,7 +99,7 @@ public class Main {
 
         //listing listOfPlants updated by data from file
         System.out.print("====Updated list of plants====");
-        System.out.println(listOfPlants.toString());
+        System.out.println(listOfPlants);
         //endregion
 
         //region testing getWateringInfo for all plants in listOfPlants TASK 13
@@ -115,12 +116,12 @@ public class Main {
         //region TASK 14
         //adding plantII to the listOfPlants
         listOfPlants.addNewPlant(plantII);
-        System.out.println(listOfPlants.toString());
+        System.out.println(listOfPlants);
         //adding plantIII to the listOfPlants
         listOfPlants.addNewPlant(plantIII);
-        System.out.println(listOfPlants.toString());
+        System.out.println(listOfPlants);
         listOfPlants.removePlant(plantII);
-        System.out.println(listOfPlants.toString());
+        System.out.println(listOfPlants);
         //endregion
 
         //region writing to file newPlantsFile.txt  TASK 15
@@ -142,7 +143,28 @@ public class Main {
 
         //listing listOfPlants updated by data from file
         System.out.print("====Reading content of the new file====");
-        System.out.println(newListOfPlants.toString());
+        System.out.println(newListOfPlants);
         //endregion
+
+        //region Lekce 06
+        //  serazeni seznamu rostlin podle nazvu rostliny vzestupne
+        List<Plant> soretdPlantList = new ArrayList<>();
+        for (int i = 0; i < newListOfPlants.getSizeOfList(); i++) {
+            try {
+                soretdPlantList.add(newListOfPlants.getPlantFromListByIndex(i));
+            } catch (PlantException e) {
+                System.out.println("Tato chyba nikdy nevyskoci " + e.getLocalizedMessage());;
+            }
+        }
+        PlantNameComparator plantNameComparator = new PlantNameComparator();
+        Collections.sort(soretdPlantList, plantNameComparator);
+        System.out.print("====Vypis seznamu rostlin podle nazvu rostliny vzestupne====");
+        soretdPlantList.forEach(System.out::println);
+
+        //  serazeni seznamu rostlin podle posledni zalivky vzestupne
+        plantNameComparator.setOrderBy(PlantNameComparator.Order.WATERING);
+        Collections.sort(soretdPlantList, plantNameComparator);
+        System.out.print("====Vypis seznamu rostlin podle posledni zalivky vzestupne====");
+        soretdPlantList.forEach(System.out::println);
     }
 }

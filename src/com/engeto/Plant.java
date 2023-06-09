@@ -15,9 +15,7 @@ public class Plant {
         this.name = name;
         this.notes = notes;
         this.planted = planted;
-        //this.watering = watering;
         this.setWatering(watering);
-        //this.frequencyOfWatering = frequencyOfWatering;
         this.setFrequencyOfWatering(frequencyOfWatering);
     }
 

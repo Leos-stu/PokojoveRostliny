@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831662d8-ac45-4ba9-905c-da51b9217a3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PokojoveRostliny.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newPlantsFile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plants.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/ListOfPlants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/Plant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/PlantException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/Settings.java" afterDir="false" />
+    <list default="true" id="831662d8-ac45-4ba9-905c-da51b9217a3b" name="Changes" comment="First commit&#10;&#10;Project PokojoveRosliny, 5.lekce">
+      <change afterPath="$PROJECT_DIR$/src/com/engeto/PlantNameComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newPlantsFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/newPlantsFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/Plant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +32,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
   <component name="RunManager">
@@ -66,8 +59,23 @@
       <option name="presentableId" value="Default" />
       <updated>1685686012477</updated>
       <workItem from="1685686014012" duration="19395000" />
-      <workItem from="1685945016131" duration="11686000" />
+      <workItem from="1685945016131" duration="13778000" />
+      <workItem from="1686030724724" duration="2958000" />
+      <workItem from="1686125064457" duration="1189000" />
+      <workItem from="1686299125626" duration="7442000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit&#10;&#10;Project PokojoveRosliny, 5.lekce">
+      <created>1685966858062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685966858062</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit&#10;&#10;Project PokojoveRosliny, 5.lekce" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit&#10;&#10;Project PokojoveRosliny, 5.lekce" />
   </component>
 </project>
