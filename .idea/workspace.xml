@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831662d8-ac45-4ba9-905c-da51b9217a3b" name="Changes" comment="Commit lesson 6&#10;&#10;Update: added printing out dates of planting within last month (31 days)">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="831662d8-ac45-4ba9-905c-da51b9217a3b" name="Changes" comment="Commit lesson 6&#10;&#10;Update: updated .gitignore file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +57,7 @@
       <workItem from="1686030724724" duration="2958000" />
       <workItem from="1686125064457" duration="1189000" />
       <workItem from="1686299125626" duration="8276000" />
-      <workItem from="1686551687906" duration="6695000" />
+      <workItem from="1686551687906" duration="7369000" />
     </task>
     <task id="LOCAL-00001" summary="First commit&#10;&#10;Project PokojoveRosliny, 5.lekce">
       <created>1685966858062</created>
@@ -89,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686558405209</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit lesson 6&#10;&#10;Update: updated .gitignore file">
+      <created>1686558957015</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686558957015</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -98,6 +103,7 @@
     <MESSAGE value="Commit lesson 6&#10;&#10;Update: added Comparator which enables sorting by plant name and watering date" />
     <MESSAGE value="Commit lesson 6&#10;&#10;Update: added printing out dates of planting" />
     <MESSAGE value="Commit lesson 6&#10;&#10;Update: added printing out dates of planting within last month (31 days)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit lesson 6&#10;&#10;Update: added printing out dates of planting within last month (31 days)" />
+    <MESSAGE value="Commit lesson 6&#10;&#10;Update: updated .gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit lesson 6&#10;&#10;Update: updated .gitignore file" />
   </component>
 </project>
