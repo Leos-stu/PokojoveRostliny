@@ -184,5 +184,6 @@ public class Main {
                 System.out.println(nextItem);
             }
         }
+        //endregion Lekce 06
     }
 }
