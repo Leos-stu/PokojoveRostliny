@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831662d8-ac45-4ba9-905c-da51b9217a3b" name="Changes" comment="Commit lesson 6&#10;&#10;Update: added Comparator which enables sorting by plant name and watering date">
+    <list default="true" id="831662d8-ac45-4ba9-905c-da51b9217a3b" name="Changes" comment="Commit lesson 6&#10;&#10;Update: added printing out dates of planting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/ListOfPlants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ListOfPlants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
       <workItem from="1686030724724" duration="2958000" />
       <workItem from="1686125064457" duration="1189000" />
       <workItem from="1686299125626" duration="8276000" />
-      <workItem from="1686551687906" duration="1709000" />
+      <workItem from="1686551687906" duration="6195000" />
     </task>
     <task id="LOCAL-00001" summary="First commit&#10;&#10;Project PokojoveRosliny, 5.lekce">
       <created>1685966858062</created>
@@ -77,13 +76,32 @@
       <option name="project" value="LOCAL" />
       <updated>1686312948749</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit lesson 6&#10;&#10;Update: added printing out dates of planting">
+      <created>1686553612098</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686553612098</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit&#10;&#10;Project PokojoveRosliny, 5.lekce" />
     <MESSAGE value="Commit lesson 6&#10;&#10;Update: added Comparator which enables sorting by palnt name and watering date" />
     <MESSAGE value="Commit lesson 6&#10;&#10;Update: added Comparator which enables sorting by plant name and watering date" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit lesson 6&#10;&#10;Update: added Comparator which enables sorting by plant name and watering date" />
+    <MESSAGE value="Commit lesson 6&#10;&#10;Update: added printing out dates of planting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit lesson 6&#10;&#10;Update: added printing out dates of planting" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

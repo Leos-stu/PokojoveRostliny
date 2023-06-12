@@ -1,6 +1,8 @@
 import com.engeto.*;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.Temporal;
 import java.util.*;
 
 public class Main {
@@ -155,20 +157,32 @@ public class Main {
         }
         PlantNameComparator plantNameComparator = new PlantNameComparator();
         Collections.sort(soretdPlantList, plantNameComparator);
-        System.out.print("====Vypis seznamu rostlin podle nazvu rostliny vzestupne====");
+        System.out.println("====Vypis seznamu rostlin podle nazvu rostliny vzestupne====");
         soretdPlantList.forEach(System.out::println);
 
         //  serazeni seznamu rostlin podle posledni zalivky vzestupne
         plantNameComparator.setOrderBy(PlantNameComparator.Order.WATERING);
         Collections.sort(soretdPlantList, plantNameComparator);
-        System.out.print("====Vypis seznamu rostlin podle posledni zalivky vzestupne====");
+        System.out.println("====Vypis seznamu rostlin podle posledni zalivky vzestupne====");
         soretdPlantList.forEach(System.out::println);
 
         //  vypis dnu, kdy byla zasazene alespon jedna rostlina
-        System.out.print("====Vypis dnu, kdy byla zasazene alespon jedna rostlina====");
+        System.out.println("====Vypis dnu, kdy byla zasazene alespon jedna rostlina====");
         Iterator iterator = newListOfPlants.setOfPlantedDates().iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
+        }
+
+        //  vypis dnu v poslednim mesici, kdy byla zasazene alespon jedna rostlina
+        System.out.println("====Vypis dnuv poslednim mesici, kdy byla zasazene alespon jedna rostlina====");
+        Iterator newIterator = newListOfPlants.setOfPlantedDates().iterator();
+        while (newIterator.hasNext()) {
+            LocalDate nextItem = (LocalDate) (newIterator.next());
+            long diffInDays = ChronoUnit.DAYS.between((Temporal) nextItem,(Temporal) LocalDate.now());
+            //System.out.println("nextItem: " + nextItem + "diffInDays: " + diffInDays);
+            if (diffInDays < 32) {
+                System.out.println(nextItem);
+            }
         }
     }
 }
