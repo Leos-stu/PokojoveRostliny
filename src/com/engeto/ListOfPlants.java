@@ -3,9 +3,7 @@ package com.engeto;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ListOfPlants {
     private List<Plant> plantList = new ArrayList<>();
@@ -70,6 +68,14 @@ public class ListOfPlants {
 
     public int getSizeOfList(){
         return  plantList.size();
+    }
+
+    public Set<LocalDate> setOfPlantedDates(){
+        Set<LocalDate> setResult = new HashSet<LocalDate>();
+        for (Plant plant : plantList){
+            setResult.add(plant.getPlanted());
+        }
+        return setResult;
     }
 
     @Override

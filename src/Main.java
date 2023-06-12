@@ -1,10 +1,7 @@
 import com.engeto.*;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -166,5 +163,12 @@ public class Main {
         Collections.sort(soretdPlantList, plantNameComparator);
         System.out.print("====Vypis seznamu rostlin podle posledni zalivky vzestupne====");
         soretdPlantList.forEach(System.out::println);
+
+        //  vypis dnu, kdy byla zasazene alespon jedna rostlina
+        System.out.print("====Vypis dnu, kdy byla zasazene alespon jedna rostlina====");
+        Iterator iterator = newListOfPlants.setOfPlantedDates().iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }
